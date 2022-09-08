@@ -1,5 +1,9 @@
 CREATE TABLE query(
-roll_no INT NOT NULL,
+roll_no VARCHAR NOT NULL,
 room_no INT NOT NULL,
 full_name VARCHAR NOT NULL,
 Problems VARCHAR NOT NULL);
+
+CREATE TABLE idea(
+suggest VARCHAR);
+

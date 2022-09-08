@@ -4,16 +4,17 @@ var app = express()
 const fs = require("fs");
 const bodyparser = require('body-parser'); 
 const port = process.env.PORT || 3000;
+var http = require("http");
 const router = express.Router();
 
 const {Client} = require('pg');
 const { ClientRequest } = require('http');
 const client = new Client({
-    host:"localhost",
-    user:"postgres",
+    host:'ec2-54-147-36-107.compute-1.amazonaws.com',
+    user:"fqvwggjcqurjps",
     port:"5432",
-    password:"12345678",
-    database:"test"
+    password:"cce71a0db350ee28986906311a45e994f656da49a7809f5f0bfb18785be4b604",
+    database:"d8rcqkm49d0r0d"
 })
 // async function main() {
 //     await client.connect();  
