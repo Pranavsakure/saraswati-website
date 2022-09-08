@@ -38,7 +38,7 @@
                 nam vitae, voluptate quas beatae incidunt? Ullam tenetur consectetur iusto reprehenderit?</p>
         </div>
 
-        <form class="--form">
+        <form class="--form" method="post" action="/problems">
             <h4 class="--form-title">Problem Box</h4>
             
             <div class="--form-input-div">
@@ -58,7 +58,7 @@
 
             <div class="--form-input-div">
                 <label for="problem">Problems : </label>
-                <input type="text" name="problem" id="problem" class="--form-input">
+                <textarea name="problem" id="problem" cols="30" rows="5" class="--form-input padding"></textarea>
             </div>
 
             <div class="--form-input-div">
@@ -66,7 +66,7 @@
             </div>
         </form>
 
-        <form class="--form" id="-form">
+        <form class="--form" id="-form" method="post" action="/suggestions">
             <h3 class="--form-title">Suggestion Box</h3>
 
             <label for="suggestion" id="-form-label">Suggestions : </label>

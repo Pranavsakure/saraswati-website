@@ -351,3 +351,7 @@ label {
         height: 120%;
     }
 }
+
+.padding{
+    padding-top: 3px;
+}
