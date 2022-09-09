@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cauvery Complaints</title>
-    <link rel="stylesheet" href="/index.css">
+    <title>IITM | Saraswati Hostel</title>
+    <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
-    <script src="index.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -17,65 +17,117 @@
         <nav>
             <img src="logo.png" class="--nav-logo">
             <div class="--nav-link">
-                <a href="" class="--nav-link-item" id="-nav-1">IITM Homepage</a>
-                <a href="" class="--nav-link-item" id="-nav-2">Dost Office</a>
-                <a href="" class="--nav-link-item" id="-nav-3">CCW Website</a>
-                <a href="" class="--nav-link-item" id="-nav-4">iKollege</a>
+                <button class="--nav-link-item" id="-nav-1">
+                    <a href="index.html">Saraswati Homepage</a>
+                </button>
+                <button href="" class="--nav-link-item" id="-nav-3">CCW Website</button>
+                <button href="" class="--nav-link-item" id="-nav-4">iKollege</button>
+                <button href="" class="--nav-link-item"  id="-nav-2" onclick="loginPage()">Login</button>
             </div>
         </nav>
-        <div class="--scroll-div-img">
+
+        <div class="--scroll-div-img"></div>
+        
+        <div class="--hidden">
+            <a href="" class="--hidden-item">SpreadSheet</a>
+            <a href="/problems" class="--hidden-item">Problems Portal</a>
+            <a href="" class="--hidden-item">Button 2</a>
         </div>
+
+        <div id="--login-portal">
+            <img src="https://www.svgrepo.com/show/363211/x-circle-bold.svg" class="--login-img" onclick="loginPage()">
+            <form class="--form" id="-login">
+                <h4 class="--form-title">Login Page</h4>
+                <div class="--form-input-div">
+                    <label for="email">Email ID : </label>
+                    <input type="email" name="email" id="email" class="--form-input" placeholder="Enter your Email">
+                </div>
+                <div class="--form-input-div">
+                    <label for="password">Password : </label>
+                    <input type="password" name="password" id="password" class="--form-input" placeholder="Enter your password">
+                </div>
+
+                <div class="--form-input-div">
+                    <input type="submit" name="submit" class="--form-submit" id="submit1" onclick="loginPage()">
+                </div>
+            </form>
+        </div>
+
+    <div class="--slideshow">
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="https://cache.careers360.mobi/media/presets/720X480/colleges/social-media/media-gallery/115/2018/2/19/IIT-Madras-1.jpg" class="--slideshow-img">
+              <div class="text">Caption Text</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="https://ccw.iitm.ac.in/photoUpload/fetchPhoto?moduleStatus=profilePath&photoId=inside_1544944885351.jpg" class="--slideshow-img">
+              <div class="text">Caption Two</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="https://content.jdmagicbox.com/comp/chennai/z2/044pxx44.xx44.170602160104.v7z2/catalogue/saraswathi-hostel-tharamani-chennai-hostels-7um6iax902.jpg" class="--slideshow-img">
+              <div class="text">Caption Three</div>
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+    </div>
+
         <div class="--content">
-            <h3 class="--content-title">About Cauvery Hostel</h3>
+            <h3 class="--content-title">About Saraswati Hostel</h3>
             <p class="--content-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab asperiores, aperiam
                 explicabo beatae
                 obcaecati ea, minima officiis corrupti impedit id magni facere voluptatibus. Ad, facilis numquam
                 delectus, maxime ipsa dicta nemo animi soluta praesentium dignissimos vel nihil, illo repellendus.
                 Provident ipsam, iusto quisquam officia ea ipsum dolorem sit velit id.
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis error quasi beatae accusamus
-                excepturi quas saepe magnam, quam ullam, alias ut veritatis eum natus, nemo consectetur libero at
+                excepturi quas saepe magnam, quam ullam, alias u veritatis eum natus, nemo consectetur libero at
                 debitis aliquid facilis molestiae laborum. Dignissimos, harum dolorem. Exercitationem obcaecati nulla
-                nam vitae, voluptate quas beatae incidunt? Ullam tenetur consectetur iusto reprehenderit?</p>
+                nam vitae, voluptate quas beatae incidunt? Ullam tenetur consectetur iusto reprehenderit?
+            </p>
         </div>
+        <div class="--content">
+            <div class="--content-part">
+                <img src="https://picsum.photos/200" class="--content-img">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, iure dicta. Neque delectus quas
+                    nemo!</p>
 
-        <form class="--form" method="post" action="/problems">
-            <h4 class="--form-title">Problem Box</h4>
-            
-            <div class="--form-input-div">
-                <label for="name">Name : </label>
-                <input type="text" name="name" id="name" class="--form-input">
             </div>
-
-            <div class="--form-input-div">
-                <label for="room_num">Room No. : </label>
-                <input type="number" name="room_num" id="room_num" class="--form-input">
-            </div>
-
-            <div class="--form-input-div">
-                <label for="roll_num">Roll No. : </label>
-                <input type="text" name="roll_num" id="roll_num" class="--form-input">
-            </div>
-
-            <div class="--form-input-div">
-                <label for="problem">Problems : </label>
-                <textarea name="problem" id="problem" cols="30" rows="5" class="--form-input padding"></textarea>
-            </div>
-
-            <div class="--form-input-div">
-                <input type="submit" class="--form-submit">
-            </div>
-        </form>
-
-        <form class="--form" id="-form" method="post" action="/suggestions">
-            <h3 class="--form-title">Suggestion Box</h3>
-
-            <label for="suggestion" id="-form-label">Suggestions : </label>
-            <textarea type="text" name="suggestion" id="suggestion"></textarea>
-
-            <div class="--form-input-div">
-                <input type="submit" class="--form-submit">
-            </div>
-        </form>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt odit dolores soluta perspiciatis
+                repellat laudantium explicabo voluptatum doloremque incidunt tempora, eius ipsum unde nostrum! Omnis
+                nesciunt dolores veniam nihil dolore id quo rem fuga mollitia laudantium, tempore ullam ducimus alias
+                sequi quae tempora perferendis impedit repellendus consequatur veritatis sunt magnam excepturi. Dolores
+                recusandae, mollitia consectetur incidunt quod ipsum debitis, voluptatibus harum nam cupiditate odio
+                quisquam nisi. Quae obcaecati mollitia praesentium incidunt ipsum ullam, quos, doloribus voluptatibus
+                quibusdam nisi aliquid beatae repudiandae dignissimos provident sunt eius est, natus placeat excepturi
+                ut consequuntur veritatis in? Perferendis ducimus repellat omnis expedita, facilis asperiores.
+            </p>
+        </div>
+        <div class="--content">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus repudiandae debitis, aperiam molestiae
+                nihil culpa fuga odit veniam, amet vero, optio ullam iusto. Dolor a, nam similique, nostrum impedit
+                sunt, animi suscipit facilis magnam earum doloremque commodi quos ab. Vitae, odio nisi. Incidunt,
+                repellendus et. Sequi mollitia ullam earum est soluta. Officiis, voluptatem adipisci rerum ipsam error
+                recusandae dolores in accusantium, accusamus enim maxime unde quam hic sed veritatis impedit delectus
+                voluptate ea voluptatibus officia, incidunt doloremque minima quidem vel! Dolorem, quos cupiditate,
+                doloribus, consequatur optio consequuntur molestiae sint temporibus ut placeat reprehenderit corporis a
+                quibusdam rerum suscipit animi magnam.</p>
+        </div>
     </div>
 
     <footer>
@@ -94,6 +146,7 @@
             </div>
         </div>
     </footer>
+    <script src="login.js"></script>
 </body>
 
 </html>

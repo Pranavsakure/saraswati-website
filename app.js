@@ -45,8 +45,14 @@ router.get('/',function(req,res){
 });
 
 app.use('/',router);
+router.get('/problems',function(req,res){
+    res.sendFile(path.join(__dirname+'/problems.html'));
+    //__dirname : It will resolve to your project folder.
+});
 
-app.post('/problems',(req,res)=>{
+app.use('/problems',router);
+
+app.post('/problem',(req,res)=>{
     client.query(
     `INSERT into query(roll_no,full_name,room_no,problems
     ) VALUES(

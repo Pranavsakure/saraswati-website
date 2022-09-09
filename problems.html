@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problems Page</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <img src="logo.png" class="--nav-logo">
+            <div class="--nav-link">
+                <button href="/" class="--nav-link-item exp" id="-nav-1">
+                    Saraswati Homepage
+                </button>
+                <button href="" class="--nav-link-item exp" id="-nav-3">CCW Website</button>
+                <button href="" class="--nav-link-item exp" id="-nav-4">iKollege</button>
+                <button href="" class="--nav-link-item exp"  id="-nav-2" onclick="loginPage()">Login</button>
+            </div>
+        </nav>
+
+    <div class="--scroll-div-img">
+    <form class="--form" method="post" action="/problem">
+        <h4 class="--form-title">Problem Box</h4>
+        
+        <div class="--form-input-div">
+            <label for="name">Name : </label>
+            <input type="text" name="name" id="name" class="--form-input">
+        </div>
+
+        <div class="--form-input-div">
+            <label for="room_num">Room No. : </label>
+            <input type="number" name="room_num" id="room_num" class="--form-input">
+        </div>
+
+        <div class="--form-input-div">
+            <label for="roll_num">Roll No. : </label>
+            <input type="text" name="roll_num" id="roll_num" class="--form-input">
+        </div>
+
+        <div class="--form-input-div">
+            <label for="problem">Problems : </label>
+            <input type="text" name="problem" id="problem" class="--form-input">
+        </div>
+
+        <div class="--form-input-div">
+            <input type="submit" class="--form-submit">
+        </div>
+    </form>
+
+    <form class="--form" id="-form" method="post" action="/suggestions">
+        <h3 class="--form-title">Suggestion Box</h3>
+
+        <label for="suggestion" id="-form-label">Suggestions : </label>
+        <textarea type="text" name="suggestion" id="suggestion"></textarea>
+
+        <div class="--form-input-div">
+            <input type="submit" class="--form-submit">
+        </div>
+    </form>
+    
+    <footer>
+        <div class="--footer">
+            <div class="--footer-text">
+                <h4>Made By Rishabh Sengupta</h4>
+                <h4>Designed by Insti Webops Team in coordination with Atul <span>Cauvery Gensec</span></h4>
+            </div>
+            <img src="logo.png" class="--footer-logo">
+            <div class="contact">
+                <h4 class="--footer-content">Security:-22578260</h4>
+                <h4 class="--footer-content">hospital- 22578333</h4>
+                <h4 class="--footer-content">hospital- 22578888</h4>
+                <h4 class="--footer-content">For animals- 22578051</h4>
+                <h4 class="--footer-content">Counselling- 22575555</h4>
+            </div>
+        </div>
+    </footer>
+    <script src="login.js"></script>
+</body>
+</html>

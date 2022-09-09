@@ -2,42 +2,186 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 nav {
-    border: 2px solid black;
+    /* border-bottom: 5px solid rgb(6, 112, 249); */
     display: flex;
     align-items: center;
-    background-color: #81f4d9b5;
-    height: 20%;
+    background-color: #f8f8fb;
+    height: 9vh;
     flex-wrap: wrap;
     width: 100%;
-    padding: 1.5% 1%;
+    padding: 0 0%;
+    box-shadow: 0px 4px 4px;
 }
 
 .--nav-link {
     margin-left: auto;
-    /* margin-right: 1%; */
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .--nav-link-item {
-    border: 2px solid black;
+    border-right: 5px solid rgb(6, 112, 249);
     text-decoration: none;
     color: black;
-    padding: 13px 23px;
-    background-color: #039be5;
-    border-radius: 15px;
-    margin-right: 2vw;
+    /* padding: 1% 7%; */
+    background-color: #e5830305;
+    width: 12vw;
+    height: 8vh;
+    text-align: center;
+    /* background-clip:content-box; */
 }
 
 .--nav-link-item:hover {
-    background-color: yellowgreen;
+    background-color: rgb(205, 125, 50);
+    background-clip: 20px 20px;
     /* padding: 15px 25px; */
 }
+
+/* #-nav-2 {
+    box-sizing: padding-box;
+} */
+
+.--hidden {
+    height: 10vh;
+    border: 2px groove black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #29354570;
+    margin-top: 1%;
+}
+
+.--hidden-item {
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    padding: 9px 15px;
+    background-color: #ffccbc;
+    border-radius: 15px;
+    margin: 0.5%;
+}
+
+#--login-portal {
+    position: fixed;
+    top: 15%;
+    z-index: 2;
+    width: 100vw;
+}
+
+#-login {
+    background-color: rgb(31, 195, 189);
+    border-radius: 5vh;
+}
+
+.--login-img {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 75%;
+}
+
+.--login-img:hover {
+    cursor: pointer;
+}
+
+.--slideshow {
+    background-color: rgba(0, 0, 0, 0.293);
+    padding: 2%;
+    margin-top: 2%;
+}
+
+.slideshow-container {
+    max-width: 100%;
+    display: flex;
+    position: relative;
+    /* margin: auto; */
+    justify-content: center;
+  }
+
+.--slideshow-img {
+    width: 80vw;
+    height: 65vh;
+}
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 3px 0 0 3px;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 3%;
+    border-radius: 0 3px 3px 0;
+  }
+
+  .prev {
+    left: 3%;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    /* animation-iteration-count: infinite; */
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
 
 .--content {
     display: flex;
@@ -45,18 +189,36 @@ nav {
     flex-direction: column;
     text-align: center;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 2.5%;
     border: 2px solid black;
     height: 40%;
     justify-content: center;
     padding: 30px;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
+    margin-bottom: 2.5%;
+    background-color: rgba(255, 255, 255, 0.473);
+    font-weight: 600;
 }
 
 .--content-title {
     font-size: 30px;
     line-height: 7rem;
+    font-weight: 700;
+}
+
+.--content-img {
+    width: 200px;
+}
+
+.--content-part {
+    display: flex;
+    align-items: center;
+    border: 2px dashed black;
+    padding: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #ffe0b2;
 }
 
 .--scroll-div-img::before {
@@ -176,7 +338,6 @@ label {
 .--footer-text {
     font-size: 20px;
     width: 15%;
-    padding: 10px;
 }
 
 .--footer-content {
@@ -352,6 +513,4 @@ label {
     }
 }
 
-.padding{
-    padding-top: 3px;
-}
+/* //// */
