@@ -21,7 +21,7 @@ const client = new Client({
 client.connect();
 
 
-client.query(`SELECT * from query`,(err,res)=>{
+client.query(`SELECT * from idea`,(err,res)=>{
     if(!err){
         console.log(res.rows);
     }else{
