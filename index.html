@@ -10,31 +10,66 @@
     <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fa40b7bfec.js" crossorigin="anonymous"></script>
+    
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
 </head>
 
 <body>
+    <section class="head" id="head">
+        <div class="container1 flex1">
+            <div class="social">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+            <div>
+                <img src="logo.png" class="--nav-logo">
+            </div>
+
+            <div class="address">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Saraswathi Hostel, IIT Madras, Chennai, <br> Tamil Nadu (PIN Code: 600036)</span>
+            </div>
+        </div>
+    </section>
     <div>
         <nav>
-            <img src="logo.png" class="--nav-logo">
+            <div class="logo">
+                <img src="logo.jpg" alt="logo" height="50px">
+                <h1>Saraswathi Hostel</h1>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
             <div class="--nav-link">
                 <button class="--nav-link-item" id="-nav-1">
                     <a href="/">Saraswati Homepage</a>
                 </button>
                 <button href="" class="--nav-link-item" id="-nav-3">CCW Website</button>
                 <button href="" class="--nav-link-item" id="-nav-4">iKollege</button>
-                <button href="" class="--nav-link-item"  id="-nav-2" onclick="loginPage()">Login</button>
+                <button class="--nav-link-item"  id="-nav-2">
+                    <a href="/login">Login</a>
+                </button>
             </div>
+            <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a> -->
+            
         </nav>
 
         <div class="--scroll-div-img"></div>
         
         <div class="--hidden">
-            <a href="https://docs.google.com/spreadsheets/d/1ozWcjMKU7cOfJYMfcfAZgM5qOeFC_Y3JFMhqCt-hT3g/edit#gid=1274152737" class="--hidden-item">SpreadSheet</a>
+            <a href="" class="--hidden-item">SpreadSheet</a>
             <a href="/problems" class="--hidden-item">Problems Portal</a>
             <a href="" class="--hidden-item">Button 2</a>
         </div>
 
-        <div id="--login-portal">
+        <!-- <div id="--login-portal">
             <img src="https://www.svgrepo.com/show/363211/x-circle-bold.svg" class="--login-img" onclick="loginPage()">
             <form class="--form" id="-login">
                 <h4 class="--form-title">Login Page</h4>
@@ -51,42 +86,74 @@
                     <input type="submit" name="submit" class="--form-submit" id="submit1" onclick="loginPage()">
                 </div>
             </form>
+        </div> -->
+
+        <div class="home container2" id="home">
+            <div class="poster">
+                <div class="--slideshow">
+                    <div class="slideshow-container">
+            
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides fade">
+                          <div class="numbertext">1 / 3</div>
+                          <img src="https://cache.careers360.mobi/media/presets/720X480/colleges/social-media/media-gallery/115/2018/2/19/IIT-Madras-1.jpg" class="--slideshow-img">
+                          <div class="text">Caption Text</div>
+                        </div>
+                      
+                        <div class="mySlides fade">
+                          <div class="numbertext">2 / 3</div>
+                          <img src="https://ccw.iitm.ac.in/photoUpload/fetchPhoto?moduleStatus=profilePath&photoId=inside_1544944885351.jpg" class="--slideshow-img">
+                          <div class="text">Caption Two</div>
+                        </div>
+                      
+                        <div class="mySlides fade">
+                          <div class="numbertext">3 / 3</div>
+                          <img src="https://content.jdmagicbox.com/comp/chennai/z2/044pxx44.xx44.170602160104.v7z2/catalogue/saraswathi-hostel-tharamani-chennai-hostels-7um6iax902.jpg" class="--slideshow-img">
+                          <div class="text">Caption Three</div>
+                        </div>
+                      
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                      </div>
+                      
+                      <!-- The dots/circles -->
+                      <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                      </div>
+                </div>
+            </div>
+            <p class="para">
+                IIT Madras is a residential institute and provides accommodation to students in the hostels. There are 20
+                hostels, all named after the mighty rivers of India. Of the hostels, 5 are for female and 15 are for male
+                students. The first-year undergraduate students are accommodated in a sharing style accommodation. In
+                subsequent years, single/double/triple rooms are allotted depending on the hostel. Postgraduate students are
+                accommodated in a sharing/single room. Internet and Local Area Network (LAN) facilities are provided in
+                every room and there is a computer room in the hostels.
+            </p>
         </div>
 
-    <div class="--slideshow">
-        <div class="slideshow-container">
+        <!-- carousal html -->
 
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-              <div class="numbertext">1 / 3</div>
-              <img src="https://cache.careers360.mobi/media/presets/720X480/colleges/social-media/media-gallery/115/2018/2/19/IIT-Madras-1.jpg" class="--slideshow-img">
-              <div class="text">Caption Text</div>
+        <div class="title" id="warden">
+            <h3>Hostel Warden</h3>
+        </div>
+        <div class="hstl_warden">
+            <div class="img"><img src="warden.jfif"></div>
+            <div>
+                <p>Warden Name: Dr. NEELESH S UPADHYE</p>
+                <p>Email: wardensaras@smail.iitm.ac.in</p>
+                <p>Office Number: 044 - 2257 8772</p>
             </div>
-          
-            <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
-              <img src="https://ccw.iitm.ac.in/photoUpload/fetchPhoto?moduleStatus=profilePath&photoId=inside_1544944885351.jpg" class="--slideshow-img">
-              <div class="text">Caption Two</div>
+            <div>
+                <h2>Hostel Staff(s)</h2>
+                <p>PRABHUDAS A <br>(MULTI-TASKING STAFF GR.I)</p>
+                <p>VEERAPANDIYAN A <br>(COOK)</p>
             </div>
-          
-            <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
-              <img src="https://content.jdmagicbox.com/comp/chennai/z2/044pxx44.xx44.170602160104.v7z2/catalogue/saraswathi-hostel-tharamani-chennai-hostels-7um6iax902.jpg" class="--slideshow-img">
-              <div class="text">Caption Three</div>
-            </div>
-          
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          </div>
-          
-          <!-- The dots/circles -->
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-          </div>
-    </div>
+        </div>
+    
 
         <div class="--content">
             <h3 class="--content-title">About Saraswati Hostel</h3>
@@ -101,23 +168,40 @@
                 nam vitae, voluptate quas beatae incidunt? Ullam tenetur consectetur iusto reprehenderit?
             </p>
         </div>
-        <div class="--content">
-            <div class="--content-part">
-                <img src="https://picsum.photos/200" class="--content-img">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, iure dicta. Neque delectus quas
-                    nemo!</p>
 
+        <div class="facilities container2" id="facilities">
+
+            <div class="box">
+                <div class="title">
+                    <h3>Facilities</h3>
+                </div>
+                <div class="para">
+                    <p>
+                        Hostel facilities include a garden and a library from which students can borrow books.
+                        Every hostel has washing machines, some sports facilities, music/tech/television rooms. Most
+                        hostel-level
+                        meetings take place in common rooms. The students celebrate festivals such as Holi, Pongal, Onam,
+                        Diwali, and New Year's Eve. The hostel night is organised annually by each hostel, where the entire
+                        hostel celebrates with food and music. This occasion also commemorates the graduating seniors of
+                        that hostel.
+                    </p>
+                </div>
+                <div class="image_box" id="div1"></div>
+                <div class="image_box" id="div2"></div>
+                <div class="image_box" id="div3"></div>
+                <div class="image_box" id="div4"></div>
+                <div class="image_box" id="div5"></div>
+                <div class="image_box" id="div6"></div>
+                <div class="image_box" id="div7"></div>
+                <div class="text">
+                    <p>* Hostel Guard - The most important person * Bathing - Occasionaly * Good food - Winning an Oscar *
+                        Clothes - Unwashed for weeks * Mobile - Only best friend * Fests - Best time to go home * Kettle -
+                        Maggie maker * Maggi - Lifesaver and Nightmeal * Nights - Sleepless *</p>
+                </div>
             </div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt odit dolores soluta perspiciatis
-                repellat laudantium explicabo voluptatum doloremque incidunt tempora, eius ipsum unde nostrum! Omnis
-                nesciunt dolores veniam nihil dolore id quo rem fuga mollitia laudantium, tempore ullam ducimus alias
-                sequi quae tempora perferendis impedit repellendus consequatur veritatis sunt magnam excepturi. Dolores
-                recusandae, mollitia consectetur incidunt quod ipsum debitis, voluptatibus harum nam cupiditate odio
-                quisquam nisi. Quae obcaecati mollitia praesentium incidunt ipsum ullam, quos, doloribus voluptatibus
-                quibusdam nisi aliquid beatae repudiandae dignissimos provident sunt eius est, natus placeat excepturi
-                ut consequuntur veritatis in? Perferendis ducimus repellat omnis expedita, facilis asperiores.
-            </p>
         </div>
+
+        
         <div class="--content">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus repudiandae debitis, aperiam molestiae
                 nihil culpa fuga odit veniam, amet vero, optio ullam iusto. Dolor a, nam similique, nostrum impedit
@@ -146,7 +230,7 @@
             </div>
         </div>
     </footer>
-    <script src="login.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

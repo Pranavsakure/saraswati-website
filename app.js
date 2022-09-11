@@ -6,6 +6,8 @@ const bodyparser = require('body-parser');
 const port = process.env.PORT || 3000;
 // var http = require("http");
 const router = express.Router();
+var flash = require('connect-flash');
+var cookieParser = require('cookie-parser');
 
 const {Client} = require('pg');
 const { ClientRequest } = require('http');
@@ -30,7 +32,7 @@ client.query(`SELECT * from idea`,(err,res)=>{
     client.end;
 })
 
-
+var session = require('express-session');
 
 
 
@@ -52,7 +54,18 @@ router.get('/problems',function(req,res){
 
 app.use('/problems',router);
 
-app.post('/problem',(req,res)=>{
+
+app.use('/',router);
+router.get('/login',function(req,res){
+    res.sendFile(path.join(__dirname+'/login.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+app.use('/login',router);
+
+
+
+app.post('/problem',(req,res,next)=>{
     client.query(
     `INSERT into query(roll_no,full_name,room_no,problems
     ) VALUES(
@@ -61,8 +74,11 @@ app.post('/problem',(req,res)=>{
         '${req.body.room_num}',
         '${req.body.problem}');`
     )
-    res.end('Added Complain');
+    res.end('Added complain');
+    
 })
+app.use('/problems',router);
+
 app.post('/suggestions',(req,res)=>{
     client.query(
     `INSERT into idea(suggest

@@ -9,17 +9,39 @@
     <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fa40b7bfec.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <section class="head" id="head">
+        <div class="flex1">
+            <div class="social">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+            <div>
+                <img src="logo.png" class="--nav-logo">
+            </div>
+
+            <div class="address">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Saraswathi Hostel, IIT Madras, Chennai, <br> Tamil Nadu (PIN Code: 600036)</span>
+            </div>
+        </div>
+    </section>
+
     <nav>
         <img src="logo.png" class="--nav-logo">
             <div class="--nav-link">
-                <button href="/" class="--nav-link-item exp" id="-nav-1">
-                    Saraswati Homepage
+                <button class="--nav-link-item" id="-nav-1">
+                    <a href="/">Saraswati Homepage</a>
                 </button>
-                <button href="" class="--nav-link-item exp" id="-nav-3">CCW Website</button>
-                <button href="" class="--nav-link-item exp" id="-nav-4">iKollege</button>
-                <button href="" class="--nav-link-item exp"  id="-nav-2" onclick="loginPage()">Login</button>
+                <button href="" class="--nav-link-item" id="-nav-3">CCW Website</button>
+                <button href="" class="--nav-link-item" id="-nav-4">iKollege</button>
+                <button class="--nav-link-item"  id="-nav-2">
+                    <a href="/login">Login</a>
+                </button>
             </div>
         </nav>
 
@@ -79,6 +101,6 @@
             </div>
         </div>
     </footer>
-    <script src="login.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
