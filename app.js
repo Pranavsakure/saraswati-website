@@ -63,6 +63,10 @@ router.get('/login',function(req,res){
 
 app.use('/login',router);
 
+// function pageRedirect() {
+//     window.location.replace("/problems");
+//   }      
+//   setTimeout("pageRedirect()", 1000000);
 
 
 app.post('/problem',(req,res,next)=>{
@@ -74,9 +78,9 @@ app.post('/problem',(req,res,next)=>{
         '${req.body.room_num}',
         '${req.body.problem}');`
     )
-    res.end('Added complain');
-    
+    res.end('<h1 align="center">Added complain</h1><br><h1 align="center"><a href="/problems">Return to form</a></h1>');
 })
+
 app.use('/problems',router);
 
 app.post('/suggestions',(req,res)=>{
@@ -84,7 +88,7 @@ app.post('/suggestions',(req,res)=>{
     `INSERT into idea(suggest
     ) VALUES('${req.body.suggestion}');`
     )
-    res.end('Added suggestions');
+    res.end('<h1 align="center">Added suggestions</h1><br><h1 align="center"><a href="/problems">Return to form</a></h1>');
 })
 app.listen(port, ()=>{
     console.log(`The application started successfully on port ${port}`);
